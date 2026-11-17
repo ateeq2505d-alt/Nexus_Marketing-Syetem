@@ -1,0 +1,20 @@
+@model List<Bill>
+@{ ViewData["Title"] = "Bills"; bool dueOnly = ViewBag.DueOnly; }
+<div class="d-flex justify-content-between align-items-center mb-2">
+  <h3>Bills</h3>
+  <div>
+    <a class="btn btn-sm @(!dueOnly ? "btn-primary" : "btn-outline-primary")" asp-action="Index">All</a>
+    <a class="btn btn-sm @(dueOnly ? "btn-primary" : "btn-outline-primary")" asp-action="Index" asp-route-dueOnly="true">With dues</a>
+    @if (User.IsInRole("Accounts")) { <form method="post" asp-action="SuspendOverdue" class="d-inline"><button class="btn btn-sm btn-danger">Suspend overdue connections</button></form> }
+  </div>
+</div>
+<div class="card"><div class="table-responsive"><table class="table table-striped table-hover mb-0">
+<thead><tr><th>Bill no.</th><th>Account ID</th><th>Customer</th><th>Generated</th><th>Due date</th><th>Total</th><th>Paid</th><th>Due</th><th></th></tr></thead>
+@foreach (var b in Model)
+{
+  <tr><td class="id-mono">@b.BillNo</td><td class="id-mono">@b.Connection.AccountId</td><td>@b.Connection.Customer.Name</td><td>@b.GeneratedDate.ToString("yyyy-MM-dd")</td>
+  <td class="@(b.Due > 0 && b.DueDate < DateTime.Today ? "text-danger fw-bold" : "")">@b.DueDate.ToString("yyyy-MM-dd")</td><td>@b.Total.ToString("C")</td><td>@b.Paid.ToString("C")</td>
+  <td>@(b.CarriedForward ? "carried fwd" : b.Due.ToString("C"))</td><td><a class="btn btn-sm btn-outline-primary" asp-action="Details" asp-route-id="@b.Id">Open</a></td></tr>
+}
+@if (!Model.Any()) { <tr><td colspan="9" class="text-muted">No bills.</td></tr> }
+</table></div></div>

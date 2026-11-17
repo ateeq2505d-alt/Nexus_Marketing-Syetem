@@ -1,0 +1,35 @@
+@model Bill
+@{ ViewData["Title"] = "Bill " + Model.BillNo; var c = Model.Connection; bool canPay = User.IsInRole("Retail") || User.IsInRole("Accounts"); decimal taxable = Model.Total - Model.Tax - Model.PreviousDue; }
+<div class="d-flex justify-content-between"><h3>Bill <span class="id-mono">@Model.BillNo</span></h3><a class="btn btn-link" asp-action="Index">&laquo; Back</a></div>
+<div class="row g-3">
+  <div class="col-lg-6"><div class="card card-body">
+    <p class="mb-2"><b>@c.Customer.Name</b><br />Account <a class="id-mono" asp-controller="Connections" asp-action="Details" asp-route-id="@c.Id">@c.AccountId</a> - @c.Plan.Name</p>
+    <table class="table table-sm mb-0">
+      <tr><th>Billing period</th><td class="text-end">@Model.PeriodStart.ToString("yyyy-MM-dd") to @Model.PeriodEnd.ToString("yyyy-MM-dd")</td></tr>
+      <tr><td>Rental / plan charge</td><td class="text-end">@Model.RentalCharge.ToString("C")</td></tr>
+      @if (Model.SecurityDeposit > 0) { <tr><td>Security deposit (refundable)</td><td class="text-end">@Model.SecurityDeposit.ToString("C")</td></tr> }
+      @if (c.ConnType == ConnType.T) { <tr><td>Call charges (local @Model.LocalMinutes min, STD @Model.StdMinutes min, messaging @Model.SmsMinutes min)</td><td class="text-end">@Model.CallCharges.ToString("C")</td></tr> }
+      @if (Model.ReplacementCharges > 0) { <tr><td>Replacement / other charges</td><td class="text-end">@Model.ReplacementCharges.ToString("C")</td></tr> }
+      @if (Model.Discount > 0) { <tr><td>Bulk discount (@c.DiscountPercent.ToString("0.##")% on advance &amp; deposit)</td><td class="text-end">-@Model.Discount.ToString("C")</td></tr> }
+      <tr><td>Taxable amount</td><td class="text-end">@taxable.ToString("C")</td></tr>
+      <tr><td>Service tax</td><td class="text-end">@Model.Tax.ToString("C")</td></tr>
+      @if (Model.PreviousDue > 0) { <tr><td>Previous dues carried forward</td><td class="text-end">@Model.PreviousDue.ToString("C")</td></tr> }
+      <tr class="table-light"><th>Total</th><th class="text-end">@Model.Total.ToString("C")</th></tr>
+      <tr><td>Paid</td><td class="text-end">@Model.Paid.ToString("C")</td></tr>
+      <tr><th>Amount due</th><th class="text-end @(Model.Due > 0 ? "text-danger" : "text-success")">@(Model.CarriedForward ? "Carried forward to a later bill" : Model.Due.ToString("C"))</th></tr>
+      <tr><td>Due date</td><td class="text-end">@Model.DueDate.ToString("yyyy-MM-dd")</td></tr>
+    </table></div></div>
+  <div class="col-lg-6">
+    @if (canPay && Model.Due > 0)
+    {
+      <div class="card card-body mb-3"><h6>Record payment</h6>
+      <form method="post" asp-action="Pay" asp-route-id="@Model.Id" class="row g-2">
+        <div class="col-md-4"><input type="number" step="0.01" name="amount" value="@Model.Due.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture)" class="form-control" /></div>
+        <div class="col-md-4"><select name="mode" class="form-select">@foreach (var m in Enum.GetNames<PayMode>()) { <option>@m</option> }</select></div>
+        <div class="col-md-4"><button class="btn btn-success w-100">Receive payment</button></div></form></div>
+    }
+    <div class="card"><div class="card-header">Payments received</div><table class="table table-sm mb-0"><thead><tr><th>Receipt</th><th>Date</th><th>Mode</th><th>Amount</th><th></th></tr></thead>
+    @foreach (var p in Model.Payments) { <tr><td class="id-mono">@p.ReceiptNo</td><td>@p.PaidOn.ToString("yyyy-MM-dd HH:mm")</td><td>@p.Mode</td><td>@p.Amount.ToString("C")</td><td><a asp-action="Receipt" asp-route-id="@p.Id">Receipt</a></td></tr> }
+    @if (!Model.Payments.Any()) { <tr><td colspan="4" class="text-muted">No payments yet.</td></tr> }</table></div>
+  </div>
+</div>

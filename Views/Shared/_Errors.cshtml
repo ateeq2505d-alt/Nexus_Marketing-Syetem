@@ -1,0 +1,12 @@
+@* Prominent list of every validation / business-rule error returned by the server. *@
+@{
+    var msgs = ViewData.ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage).Where(m => !string.IsNullOrWhiteSpace(m)).Distinct().ToList();
+}
+@if (msgs.Any())
+{
+  <div class="alert alert-danger form-errors" role="alert">
+    <div class="d-flex"><i class="bi bi-exclamation-octagon-fill me-3 fs-4"></i>
+      <div><b>The form could not be saved. Please fix the following:</b>
+        <ul class="mb-0 mt-1">@foreach (var m in msgs) { <li>@m</li> }</ul></div></div>
+  </div>
+}

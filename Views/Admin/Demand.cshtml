@@ -1,0 +1,11 @@
+@model List<DemandRow>
+@{ ViewData["Title"] = "Equipment demand"; }
+<h3>Equipment demand vs stock</h3>
+<p class="text-muted">Demand comes from orders that are received or feasible but not yet connected. Use it to decide what to order from vendors.</p>
+<div class="card"><table class="table table-striped mb-0"><thead><tr><th>Product</th><th>Type</th><th>Vendor</th><th>In stock</th><th>Needed for open orders</th><th>Shortfall</th><th></th></tr></thead>
+@foreach (var r in Model)
+{
+  <tr class="@(r.Shortfall > 0 ? "table-warning" : "")"><td>@r.Product.Name</td><td>@r.Product.Type</td><td>@r.Product.Vendor?.Name</td><td>@r.Product.Stock</td><td>@r.Demand</td><td>@r.Shortfall</td>
+  <td>@if (r.Shortfall > 0) { <a class="btn btn-sm btn-outline-primary" asp-controller="Purchases" asp-action="Create">Raise purchase order</a> }</td></tr>
+}
+</table></div>

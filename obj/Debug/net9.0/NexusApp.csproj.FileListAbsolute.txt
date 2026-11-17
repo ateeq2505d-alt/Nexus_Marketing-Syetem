@@ -1,0 +1,486 @@
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.csproj.AssemblyReference.cache
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.AssemblyInfoInputs.cache
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.AssemblyInfo.cs
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.csproj.CoreCompileInputs.cache
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.MvcApplicationPartsAssemblyInfo.cache
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.RazorAssemblyInfo.cache
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.RazorAssemblyInfo.cs
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\appsettings.Development.json
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\appsettings.json
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\NexusApp.staticwebassets.runtime.json
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\NexusApp.staticwebassets.endpoints.json
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\NexusApp.exe
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\NexusApp.deps.json
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\NexusApp.runtimeconfig.json
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\NexusApp.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\NexusApp.pdb
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.Data.Sqlite.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\SQLitePCLRaw.batteries_v2.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\SQLitePCLRaw.core.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\SQLitePCLRaw.provider.e_sqlite3.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-arm\native\libe_sqlite3.so
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-arm64\native\libe_sqlite3.so
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-armel\native\libe_sqlite3.so
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-mips64\native\libe_sqlite3.so
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-s390x\native\libe_sqlite3.so
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-x64\native\libe_sqlite3.so
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-x86\native\libe_sqlite3.so
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-arm\native\e_sqlite3.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\scopedcss\bundle\NexusApp.styles.css
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\qjljinoaw1-61n19gt1b8.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\g9wdnir5qb-bqjiyaj88i.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\lfvfwvwbom-c2jlpeoesf.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\ljwd3ocpkq-erw9l3u2r3.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\3f0kw56xxi-aexeepp0ev.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\mfv5xoqyuj-d7shbmvgxk.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\vbchyxbl16-ausgxo2sd3.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\wvfkme0zw8-k8d9w2qqmf.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\694l7ihoxd-cosvhxvwiu.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\znzistrf6h-ub07r2b239.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\7oqocfi9tz-fvhpjtyr6v.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\4s74r9mpws-b7pk76d08c.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\yixi1yl0z2-fsbi9cje9m.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\tytmz7m9eu-rzd6atqjts.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\gk7q0s8cr1-ee0r1s7dh0.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\x7kd38zmdi-dxx9fxp4il.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\50mdeo0ppr-jd9uben2k1.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\8mp1hmf8ia-khv3u5hwcm.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\ghmr39ecvp-r4e9w2rdcm.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\pjowgavw5i-lcd1t2u6c8.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\7tcpz5pv22-c2oey78nd0.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\hvhgjmcbmy-tdbxkamptv.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\jcaewouwcq-j5mq2jizvt.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\p7qcjjpvgm-06098lyss8.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\fw0gd4ozcz-nvvlpmu67g.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\7llcc3v1rz-s35ty4nyc5.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\xu0ndjy80v-pj5nd1wqec.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\ax23s7n396-46ein0sx1k.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\jdtl6p1pvk-v0zj4ognzu.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\05fk9xx8km-37tfw0ft22.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\a2mm4tx3jm-hrwsygsryq.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\im703gqon2-pk9g2wxc8p.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\84ioswm5i3-ft3s53vfgj.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\w9m7h79ref-6cfz1n2cew.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\5rt9sxb84j-6pdc2jztkx.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\1xybznt7j4-493y06b0oq.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\b9154po1c7-iovd86k7lj.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\kie2uyvo49-vr1egmr9el.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\ogm7jhifgw-kbrnm935zg.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\o40w7v29l1-jj8uyg4cgr.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\o980c7ph1f-y7v9cxd14o.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\qs9dcfp4q2-notf2xhcfb.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\6hq546eofz-h1s4sie4z3.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\oh76svqupz-63fj8s7r0e.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\7gnwkec3wz-0j3bgjxly4.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\4bvsqixgi6-47otxtyo56.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\spgbbzivaj-4v8eqarkd7.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\izqmj66mkw-356vix0kms.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\vyycwi6m0n-83jwlth58m.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\j1nad3i1ww-mrlpezrjn3.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\tzc0xzqzb1-lzl9nlhx6b.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\rrkcu8x8qz-ag7o75518u.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\ml7943v15l-x0q3zqp4vz.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\hmjpo9r44f-0i3buxo5is.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\a93mfisjjw-o1o13a6vjx.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\tikuiyx9vw-ttgo8qnofa.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\abenundx0c-2z0ns9nrw6.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\7z07i38afq-muycvpuwrr.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\e8d8zis7y5-87fc7y1x7t.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\yx4r1bv8ge-mlv21k5csn.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\staticwebassets.build.json
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\staticwebassets.development.json
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\staticwebassets\msbuild.NexusApp.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\staticwebassets\msbuild.NexusApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\staticwebassets\msbuild.build.NexusApp.props
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.NexusApp.props
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.NexusApp.props
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\staticwebassets.pack.json
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.csproj.Up2Date
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\refint\NexusApp.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.pdb
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.genruntimeconfig.cache
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\ref\NexusApp.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Azure.Core.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Azure.Identity.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.ClientModel.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.Drawing.Common.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.Memory.Data.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.Runtime.Caching.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.Security.Permissions.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.Windows.Extensions.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\6hmj3v2w2d-26f9b7qkas.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\gab95s1fs4-2w9hnoq2cx.gz
+E:\Mohtasam Project\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\zht3qwucn7-redny9xlnx.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\appsettings.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\NexusApp.staticwebassets.runtime.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\NexusApp.staticwebassets.endpoints.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\NexusApp.exe
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\NexusApp.deps.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\NexusApp.runtimeconfig.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\NexusApp.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\NexusApp.pdb
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.Data.Sqlite.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\SQLitePCLRaw.core.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.Runtime.Caching.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.csproj.AssemblyReference.cache
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.AssemblyInfoInputs.cache
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.AssemblyInfo.cs
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.csproj.CoreCompileInputs.cache
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.RazorAssemblyInfo.cache
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.RazorAssemblyInfo.cs
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\scopedcss\bundle\NexusApp.styles.css
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\gab95s1fs4-2w9hnoq2cx.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\qjljinoaw1-61n19gt1b8.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\zht3qwucn7-redny9xlnx.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\6hmj3v2w2d-26f9b7qkas.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\g9wdnir5qb-bqjiyaj88i.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\lfvfwvwbom-c2jlpeoesf.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\ljwd3ocpkq-erw9l3u2r3.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\3f0kw56xxi-aexeepp0ev.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\mfv5xoqyuj-d7shbmvgxk.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\vbchyxbl16-ausgxo2sd3.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\wvfkme0zw8-k8d9w2qqmf.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\694l7ihoxd-cosvhxvwiu.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\znzistrf6h-ub07r2b239.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\7oqocfi9tz-fvhpjtyr6v.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\4s74r9mpws-b7pk76d08c.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\yixi1yl0z2-fsbi9cje9m.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\tytmz7m9eu-rzd6atqjts.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\gk7q0s8cr1-ee0r1s7dh0.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\x7kd38zmdi-dxx9fxp4il.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\50mdeo0ppr-jd9uben2k1.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\8mp1hmf8ia-khv3u5hwcm.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\ghmr39ecvp-r4e9w2rdcm.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\pjowgavw5i-lcd1t2u6c8.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\7tcpz5pv22-c2oey78nd0.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\hvhgjmcbmy-tdbxkamptv.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\jcaewouwcq-j5mq2jizvt.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\p7qcjjpvgm-06098lyss8.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\fw0gd4ozcz-nvvlpmu67g.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\7llcc3v1rz-s35ty4nyc5.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\xu0ndjy80v-pj5nd1wqec.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\ax23s7n396-46ein0sx1k.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\jdtl6p1pvk-v0zj4ognzu.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\05fk9xx8km-37tfw0ft22.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\a2mm4tx3jm-hrwsygsryq.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\im703gqon2-pk9g2wxc8p.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\84ioswm5i3-ft3s53vfgj.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\w9m7h79ref-6cfz1n2cew.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\5rt9sxb84j-6pdc2jztkx.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\1xybznt7j4-493y06b0oq.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\b9154po1c7-iovd86k7lj.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\kie2uyvo49-vr1egmr9el.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\ogm7jhifgw-kbrnm935zg.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\o40w7v29l1-jj8uyg4cgr.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\o980c7ph1f-y7v9cxd14o.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\qs9dcfp4q2-notf2xhcfb.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\6hq546eofz-h1s4sie4z3.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\oh76svqupz-63fj8s7r0e.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\7gnwkec3wz-0j3bgjxly4.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\4bvsqixgi6-47otxtyo56.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\spgbbzivaj-4v8eqarkd7.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\izqmj66mkw-356vix0kms.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\vyycwi6m0n-83jwlth58m.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\j1nad3i1ww-mrlpezrjn3.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\tzc0xzqzb1-lzl9nlhx6b.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\rrkcu8x8qz-ag7o75518u.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\ml7943v15l-x0q3zqp4vz.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\hmjpo9r44f-0i3buxo5is.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\a93mfisjjw-o1o13a6vjx.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\tikuiyx9vw-ttgo8qnofa.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\abenundx0c-2z0ns9nrw6.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\7z07i38afq-muycvpuwrr.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\e8d8zis7y5-87fc7y1x7t.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\compressed\yx4r1bv8ge-mlv21k5csn.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.csproj.Up2Date
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\refint\NexusApp.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.pdb
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\NexusApp.genruntimeconfig.cache
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\NEXUS SERVICE MARKETING SYSTEM - demo\NexusApp\obj\Debug\net9.0\ref\NexusApp.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\appsettings.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\NexusApp.staticwebassets.endpoints.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\NexusApp.staticwebassets.runtime.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\NexusApp.exe
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\NexusApp.deps.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\NexusApp.runtimeconfig.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\NexusApp.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\NexusApp.pdb
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.Data.Sqlite.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\SQLitePCLRaw.core.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\System.Runtime.Caching.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\NexusApp.csproj.AssemblyReference.cache
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\NexusApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\NexusApp.AssemblyInfoInputs.cache
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\NexusApp.AssemblyInfo.cs
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\NexusApp.csproj.CoreCompileInputs.cache
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\NexusApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\NexusApp.RazorAssemblyInfo.cache
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\NexusApp.RazorAssemblyInfo.cs
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\scopedcss\bundle\NexusApp.styles.css
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\gab95s1fs4-2w9hnoq2cx.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\qjljinoaw1-61n19gt1b8.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\zht3qwucn7-redny9xlnx.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\6hmj3v2w2d-26f9b7qkas.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\g9wdnir5qb-bqjiyaj88i.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\lfvfwvwbom-c2jlpeoesf.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\ljwd3ocpkq-erw9l3u2r3.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\3f0kw56xxi-aexeepp0ev.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\mfv5xoqyuj-d7shbmvgxk.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\vbchyxbl16-ausgxo2sd3.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\wvfkme0zw8-k8d9w2qqmf.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\694l7ihoxd-cosvhxvwiu.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\znzistrf6h-ub07r2b239.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\7oqocfi9tz-fvhpjtyr6v.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\4s74r9mpws-b7pk76d08c.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\yixi1yl0z2-fsbi9cje9m.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\tytmz7m9eu-rzd6atqjts.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\gk7q0s8cr1-ee0r1s7dh0.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\x7kd38zmdi-dxx9fxp4il.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\50mdeo0ppr-jd9uben2k1.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\8mp1hmf8ia-khv3u5hwcm.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\ghmr39ecvp-r4e9w2rdcm.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\pjowgavw5i-lcd1t2u6c8.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\7tcpz5pv22-c2oey78nd0.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\hvhgjmcbmy-tdbxkamptv.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\jcaewouwcq-j5mq2jizvt.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\p7qcjjpvgm-06098lyss8.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\fw0gd4ozcz-nvvlpmu67g.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\7llcc3v1rz-s35ty4nyc5.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\xu0ndjy80v-pj5nd1wqec.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\ax23s7n396-46ein0sx1k.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\jdtl6p1pvk-v0zj4ognzu.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\05fk9xx8km-37tfw0ft22.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\a2mm4tx3jm-hrwsygsryq.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\im703gqon2-pk9g2wxc8p.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\84ioswm5i3-ft3s53vfgj.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\w9m7h79ref-6cfz1n2cew.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\5rt9sxb84j-6pdc2jztkx.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\1xybznt7j4-493y06b0oq.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\b9154po1c7-iovd86k7lj.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\kie2uyvo49-vr1egmr9el.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\ogm7jhifgw-kbrnm935zg.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\o40w7v29l1-jj8uyg4cgr.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\o980c7ph1f-y7v9cxd14o.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\qs9dcfp4q2-notf2xhcfb.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\6hq546eofz-h1s4sie4z3.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\oh76svqupz-63fj8s7r0e.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\7gnwkec3wz-0j3bgjxly4.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\4bvsqixgi6-47otxtyo56.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\spgbbzivaj-4v8eqarkd7.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\izqmj66mkw-356vix0kms.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\vyycwi6m0n-83jwlth58m.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\j1nad3i1ww-mrlpezrjn3.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\tzc0xzqzb1-lzl9nlhx6b.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\rrkcu8x8qz-ag7o75518u.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\ml7943v15l-x0q3zqp4vz.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\hmjpo9r44f-0i3buxo5is.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\a93mfisjjw-o1o13a6vjx.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\tikuiyx9vw-ttgo8qnofa.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\abenundx0c-2z0ns9nrw6.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\7z07i38afq-muycvpuwrr.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\e8d8zis7y5-87fc7y1x7t.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\compressed\yx4r1bv8ge-mlv21k5csn.gz
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\NexusApp.csproj.Up2Date
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\NexusApp.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\refint\NexusApp.dll
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\NexusApp.pdb
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\NexusApp.genruntimeconfig.cache
+C:\Users\wajiha\Downloads\NEXUS SERVICE MARKETING SYSTEM - demo\Eproject_Nexus\NexusApp\obj\Debug\net9.0\ref\NexusApp.dll

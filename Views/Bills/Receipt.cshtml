@@ -1,0 +1,17 @@
+@model Payment
+@{ ViewData["Title"] = "Receipt " + Model.ReceiptNo; var c = Model.Bill.Connection; }
+<div class="card card-body form-grid">
+  <h4>Nexus Communication System - Payment Receipt</h4>
+  <table class="table table-sm mb-3">
+    <tr><th>Receipt no.</th><td class="id-mono">@Model.ReceiptNo</td></tr>
+    <tr><th>Date</th><td>@Model.PaidOn.ToString("yyyy-MM-dd HH:mm")</td></tr>
+    <tr><th>Customer</th><td>@c.Customer.Name</td></tr>
+    <tr><th>Account ID</th><td class="id-mono">@c.AccountId</td></tr>
+    <tr><th>Plan</th><td>@c.Plan.Name</td></tr>
+    <tr><th>Bill</th><td>@Model.Bill.BillNo (total @Model.Bill.Total.ToString("C"))</td></tr>
+    <tr><th>Payment mode</th><td>@Model.Mode</td></tr>
+    <tr><th>Amount received</th><td><b>@Model.Amount.ToString("C")</b></td></tr>
+    <tr><th>Balance due on bill</th><td>@Model.Bill.Due.ToString("C")</td></tr>
+  </table>
+  <div><button class="btn btn-outline-primary" onclick="window.print()">Print</button> <a class="btn btn-link" asp-action="Details" asp-route-id="@Model.BillId">Back to bill</a></div>
+</div>

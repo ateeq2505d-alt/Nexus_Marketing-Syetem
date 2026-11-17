@@ -1,0 +1,11 @@
+@model List<Plan>
+@{ ViewData["Title"] = "Plans"; }
+<h3>Plans and charges</h3>
+<p class="text-muted">Postpaid billing. Service tax of 12.24% applies on the whole bill. Security deposit (refundable): Dial-Up $325, Broadband $500, Landline $250. Bulk discount on advance and security deposit: 10-15 connections 25%, 16-25 50%, 26-50 75%, above 50 100%.</p>
+@foreach (var g in Model.GroupBy(p => p.ConnType))
+{
+  <h5 class="mt-4">@TypeInfo.Label(g.Key)</h5>
+  <div class="card"><table class="table table-striped mb-0"><thead><tr><th>Plan</th><th>Details</th><th>Rental / price</th><th>Cycle</th>@if (g.Key == ConnType.T) { <th>Local</th><th>STD</th><th>Mobile msg</th> }</tr></thead>
+  @foreach (var p in g) { <tr><td>@p.Name</td><td>@p.Description</td><td>$@p.Rental.ToString("0.##")</td><td>@p.Cycle</td>@if (g.Key == ConnType.T) { <td>$@p.LocalRate.ToString("0.00")</td><td>@(p.StdRate > 0 ? "$" + p.StdRate.ToString("0.00") : "-")</td><td>@(p.SmsRate > 0 ? "$" + p.SmsRate.ToString("0.00") : "-")</td> }</tr> }
+  </table></div>
+}

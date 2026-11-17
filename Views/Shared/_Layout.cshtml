@@ -1,0 +1,142 @@
+@inject NexusApp.Data.AppDb LayoutDb
+@{
+    bool auth = User.Identity.IsAuthenticated;
+    bool admin = User.IsInRole("Admin"), retail = User.IsInRole("Retail"), tech = User.IsInRole("Technical"), acc = User.IsInRole("Accounts"), cust = User.IsInRole("Customer");
+    string role = User.Claims.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Role)?.Value;
+    string uname = User.Identity.Name ?? "";
+    string initials = string.Join("", uname.Split(' ', StringSplitOptions.RemoveEmptyEntries).Take(2).Select(s => s[0])).ToUpper();
+    int unread = 0, pendingChanges = 0;
+    if (cust) { int uid = int.Parse(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value); unread = LayoutDb.Notifications.Count(n => n.CustomerId == uid && !n.IsRead); }
+    if (tech || admin) pendingChanges = LayoutDb.PlanChanges.Count(p => p.Status == NexusApp.Models.RequestStatus.Pending);
+    var title = (string)ViewData["Title"] ?? "Nexus";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@title - Nexus</title>
+    <script>try{var t=localStorage.getItem('nx-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-bs-theme',t);}catch(e){}</script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap-icons/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%234f46e5'/><text x='50' y='68' font-size='58' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>N</text></svg>" />
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" asp-controller="Home" asp-action="Index"><span class="brand-mark"><i class="bi bi-broadcast-pin"></i></span><span>NEXUS<small>Service marketing</small></span></a>
+
+    <div class="nav-section">Overview</div>
+    <partial name="_NavItem" model='("Home","Index","grid-1x2","Dashboard")' />
+    <partial name="_NavItem" model='("Home","Plans","tags","Plans & charges")' />
+    <partial name="_NavItem" model='("Home","Search","geo-alt","Track order / account")' />
+    @if (auth) { <partial name="_NavItem" model='("Home","Advanced","search","Advanced search")' /> }
+
+    @if (auth)
+    {
+        <div class="nav-section">@(cust ? "My account" : "Operations")</div>
+        <partial name="_NavItem" model='("Orders","Index","bag-check","Orders")' />
+        <partial name="_NavItem" model='("Connections","Index","hdd-network","Connections")' />
+        @if (!tech) { <partial name="_NavItem" model='("Bills","Index","receipt","Bills")' /> }
+        @if (admin || retail || acc) { <partial name="_NavItem" model='("Bills","Payments","cash-coin","Payments")' /> }
+        @if (acc) { <partial name="_NavItem" model='("Bills","Generate","calculator","Generate bill")' /> }
+        <a class="side-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "PlanChanges" ? "active" : "")" asp-controller="PlanChanges" asp-action="Index"><i class="bi bi-arrow-left-right"></i><span>Plan changes</span>@if (pendingChanges > 0) { <span class="pill">@pendingChanges</span> }</a>
+        @if (!cust) {
+            <partial name="_NavItem" model='("Customers","Index","people","Customers")' />
+            <partial name="_NavItem" model='("Documents","Index","folder2-open","Documents")' />
+        }
+        @if (cust) {
+            <partial name="_NavItem" model='("Customers","Profile","person-vcard","My profile")' />
+            <a class="side-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Notifications" ? "active" : "")" asp-controller="Notifications" asp-action="Index"><i class="bi bi-bell"></i><span>Notifications</span>@if (unread > 0) { <span class="pill">@unread</span> }</a>
+            <partial name="_NavItem" model='("Feedback","Index","chat-heart","Feedback")' />
+        }
+        @if (admin || tech)
+        {
+            <div class="nav-section">Manage</div>
+            <partial name="_NavItem" model='("Products","Index","box-seam","Products & stock")' />
+            @if (admin)
+            {
+                <partial name="_NavItem" model='("Plans","Index","sliders","Plans master")' />
+                <partial name="_NavItem" model='("Employees","Index","person-badge","Employees")' />
+                <partial name="_NavItem" model='("Shops","Index","shop","Retail shops")' />
+                <partial name="_NavItem" model='("Vendors","Index","truck","Vendors")' />
+                <partial name="_NavItem" model='("Purchases","Index","cart-plus","Vendor purchases")' />
+                <partial name="_NavItem" model='("Cities","Index","pin-map","Cities")' />
+                <div class="nav-section">Admin tools</div>
+                <partial name="_NavItem" model='("Admin","Settings","gear","Deposits & tax")' />
+                <partial name="_NavItem" model='("Admin","Demand","bar-chart-line","Equipment demand")' />
+                <a class="side-link" asp-controller="Admin" asp-action="Backup"><i class="bi bi-cloud-arrow-down"></i><span>Download backup</span></a>
+            }
+        }
+    }
+    else
+    {
+        <div class="nav-section">Account</div>
+        <partial name="_NavItem" model='("Account","Login","box-arrow-in-right","Login")' />
+        <partial name="_NavItem" model='("Account","Register","person-plus","Register")' />
+    }
+    <div class="side-foot">Nexus Communication System<br />Demo build</div>
+  </aside>
+  <div class="sidebar-backdrop" id="backdrop" onclick="toggleSidebar()"></div>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn d-lg-none" onclick="toggleSidebar()" aria-label="Menu"><i class="bi bi-list fs-5"></i></button>
+      <div class="page-crumb"><span>Nexus /</span> @title</div>
+      <form id="quickSearch" class="quick-search" data-auth="@(auth ? "1" : "0")" role="search">
+        <i class="bi bi-search"></i><input class="form-control" placeholder="Track an order or account ID, or search a name   ( / )" aria-label="Quick search" />
+      </form>
+      <div class="ms-auto d-flex align-items-center gap-2">
+        <button class="icon-btn" id="themeBtn" onclick="toggleTheme()" title="Switch light / dark theme" aria-label="Toggle theme"><i class="bi bi-moon-stars"></i></button>
+        @if (cust)
+        {
+            <a class="icon-btn" asp-controller="Notifications" asp-action="Index" title="Notifications"><i class="bi bi-bell"></i>@if (unread > 0) { <span class="dot">@unread</span> }</a>
+        }
+        @if (auth)
+        {
+            <div class="dropdown">
+              <div class="user-chip" data-bs-toggle="dropdown" role="button" tabindex="0">
+                <div class="avatar">@initials</div>
+                <div class="who"><b>@uname</b><small>@role</small></div><i class="bi bi-chevron-down small text-muted"></i>
+              </div>
+              <ul class="dropdown-menu dropdown-menu-end">
+                @if (cust) { <li><a class="dropdown-item" asp-controller="Customers" asp-action="Profile"><i class="bi bi-person me-2"></i>My profile</a></li> }
+                <li><a class="dropdown-item" asp-controller="Account" asp-action="Logout"><i class="bi bi-box-arrow-right me-2"></i>Sign out</a></li>
+              </ul>
+            </div>
+        }
+        else
+        {
+            <a class="btn btn-primary btn-sm" asp-controller="Account" asp-action="Login">Sign in</a>
+        }
+      </div>
+    </header>
+
+    <main class="content">
+        @RenderBody()
+        <footer class="app-foot">Nexus Service Marketing System &middot; demo build</footer>
+    </main>
+  </div>
+</div>
+
+<div class="toast-stack" aria-live="polite">
+  @if (TempData["ok"] != null) { <div class="nx-toast ok"><i class="bi bi-check-circle-fill"></i><div>@TempData["ok"]</div><button class="x" aria-label="Close">&times;</button></div> }
+  @if (TempData["err"] != null) { <div class="nx-toast err"><i class="bi bi-exclamation-octagon-fill"></i><div>@TempData["err"]</div><button class="x" aria-label="Close">&times;</button></div> }
+</div>
+
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm"><div class="modal-content">
+    <div class="modal-body text-center p-4">
+      <div class="stat-icon mx-auto mb-3" style="width:54px;height:54px;border-radius:50%;background:#fee2e2;color:#dc2626;display:grid;place-items:center;font-size:1.5rem"><i class="bi bi-exclamation-triangle"></i></div>
+      <h5 class="mb-1">Please confirm</h5><p class="text-muted mb-4" id="confirmText">Are you sure?</p>
+      <div class="d-flex gap-2 justify-content-center"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button><button class="btn btn-primary" id="confirmYes">Yes, continue</button></div>
+    </div></div></div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

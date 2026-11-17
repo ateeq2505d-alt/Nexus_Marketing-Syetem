@@ -1,0 +1,67 @@
+@model Connection
+@{
+    ViewData["Title"] = "Connection " + Model.AccountId;
+    var bills = (List<Bill>)ViewBag.Bills; var mats = (List<ConnectionMaterial>)ViewBag.Materials; var products = (List<Product>)ViewBag.Products; decimal due = ViewBag.Due;
+    bool tech = User.IsInRole("Technical");
+    var usage = (UsageSummary)ViewBag.Usage; var usageRows = (List<UsageRecord>)ViewBag.UsageRows; decimal netDeposit = ViewBag.NetDeposit; var changes = (List<PlanChange>)ViewBag.Changes;
+}
+<div class="d-flex justify-content-between"><h3>Account <span class="id-mono">@Model.AccountId</span> <span class="badge @UI.Css(Model.Status.ToString())">@Model.Status</span></h3><a class="btn btn-link" asp-action="Index">&laquo; Back</a></div>
+<div class="row g-3">
+  <div class="col-lg-6"><div class="card card-body"><table class="table table-sm mb-0">
+    <tr><th>Customer</th><td>@Model.Customer.Name, @Model.Customer.Phone, @Model.Customer.Email</td></tr>
+    <tr><th>Address</th><td>@Model.Customer.Address (@Model.City.Name)</td></tr>
+    <tr><th>Connection type</th><td>@TypeInfo.Label(Model.ConnType)</td></tr>
+    <tr><th>Plan</th><td>@Model.Plan.Name - $@Model.Plan.Rental.ToString("0.##") / @Model.Plan.Cycle</td></tr>
+    <tr><th>Order</th><td><a class="id-mono" asp-controller="Orders" asp-action="Details" asp-route-id="@Model.OrderId">@Model.Order.OrderNo</a></td></tr>
+    <tr><th>Equipment provided</th><td>@(Model.Equipment?.Name ?? "-")</td></tr>
+    <tr><th>Started</th><td>@Model.StartDate.ToString("yyyy-MM-dd")</td></tr>
+    <tr><th>Security deposit</th><td>@Model.SecurityDeposit.ToString("C") @(Model.DiscountPercent > 0 ? $"(bulk discount {Model.DiscountPercent:0.##}%)" : "")</td></tr>
+    <tr><th>Status note</th><td>@Model.StatusReason</td></tr>
+    <tr><th>Deposit charged (after discount)</th><td>@netDeposit.ToString("C")@if (Model.RefundedOn != null) { <span class="badge bg-success ms-2">Refunded @Model.DepositRefunded.ToString("C") on @Model.RefundedOn.Value.ToString("yyyy-MM-dd")</span> }</td></tr>
+    <tr><th>Plan valid</th><td>@Model.PlanStartDate.ToString("yyyy-MM-dd") to @usage.ValidUntil.ToString("yyyy-MM-dd") @if (usage.Expired) { <span class="badge bg-warning text-dark">validity period over - renew by next bill</span> }</td></tr>
+    <tr><th>Amount due</th><td><b class="@(due > 0 ? "text-danger" : "text-success")">@due.ToString("C")</b></td></tr>
+  </table>
+  <div class="mt-2">
+    @if (User.IsInRole("Customer") || User.IsInRole("Retail")) { <a class="btn btn-sm btn-outline-primary" asp-controller="PlanChanges" asp-action="Create" asp-route-connectionId="@Model.Id">Request plan change</a> }
+    @if (User.IsInRole("Accounts") && Model.Status == ConnStatus.PermanentlyInactive && Model.RefundedOn == null)
+    { <form method="post" asp-action="RefundDeposit" asp-route-id="@Model.Id" class="d-inline"><button class="btn btn-sm btn-success">Refund security deposit</button></form> }
+  </div></div>
+  @if (usage.IsHourly)
+  {
+    <div class="card mt-3"><div class="card-header">Hourly pack usage - @usage.PackHours hrs
+      <span class="badge @(usage.Exhausted || usage.Expired ? "bg-danger" : "bg-success") ms-2">@usage.Used.ToString("0.##") used / @usage.Remaining.ToString("0.##") left</span></div>
+      <div class="card-body">
+      @if (tech || User.IsInRole("Accounts")) { <form method="post" asp-action="RecordUsage" asp-route-id="@Model.Id" class="row g-2 mb-2"><div class="col-6"><input type="number" step="0.25" min="0.25" name="hours" class="form-control" placeholder="Hours used" /></div><div class="col-6"><button class="btn btn-outline-primary w-100">Record usage</button></div></form> }
+      <table class="table table-sm mb-0">@foreach (var u in usageRows) { <tr><td>@u.Date.ToString("yyyy-MM-dd HH:mm")</td><td>@u.Hours.ToString("0.##") hrs</td></tr> }
+      @if (!usageRows.Any()) { <tr><td class="text-muted">No usage recorded.</td></tr> }</table></div></div>
+  }
+  @if (changes.Any())
+  {
+    <div class="card mt-3"><div class="card-header">Plan change history</div><table class="table table-sm mb-0">
+    @foreach (var ch in changes) { <tr><td>@ch.RequestedOn.ToString("yyyy-MM-dd")</td><td>to @ch.NewPlan.Name</td><td>@ch.Status</td></tr> }</table></div>
+  }
+  @if (mats.Any()) {
+    <div class="card mt-3"><div class="card-header">Materials provided / replacements</div><table class="table table-sm mb-0"><thead><tr><th>Date</th><th>Item</th><th>Qty</th><th>Type</th><th>Charge</th></tr></thead>
+    @foreach (var m in mats) { <tr><td>@m.Date.ToString("yyyy-MM-dd")</td><td>@m.Product.Name</td><td>@m.Quantity</td><td>@(m.IsReplacement ? "Replacement" : "Issued")</td><td>@m.Charge.ToString("C") @(m.IsReplacement ? (m.Billed ? "(billed)" : "(unbilled)") : "")</td></tr> }</table></div> }
+  </div>
+  <div class="col-lg-6">
+    @if (tech && Model.Status != ConnStatus.PermanentlyInactive)
+    {
+      <div class="card card-body mb-3"><h6>Change connection status</h6>
+      <form method="post" asp-action="SetStatus" asp-route-id="@Model.Id" class="row g-2">
+        <div class="col-md-4"><select name="status" class="form-select"><option value="Active">Active</option><option value="TemporarilyInactive">Temporarily inactive</option><option value="PermanentlyInactive">Permanently inactive</option></select></div>
+        <div class="col-md-5"><input name="reason" class="form-control" placeholder="Reason" /></div>
+        <div class="col-md-3"><button class="btn btn-warning w-100">Update</button></div></form></div>
+      <div class="card card-body mb-3"><h6>Record equipment replacement</h6>
+      <form method="post" asp-action="Replace" asp-route-id="@Model.Id" class="row g-2">
+        <div class="col-md-5"><select name="productId" class="form-select">@foreach (var p in products) { <option value="@p.Id">@p.Name (stock @p.Stock)</option> }</select></div>
+        <div class="col-md-2"><input type="number" name="quantity" value="1" min="1" class="form-control" /></div>
+        <div class="col-md-3"><div class="form-check mt-2"><input type="checkbox" class="form-check-input" name="chargeCustomer" value="true" checked /><input type="hidden" name="chargeCustomer" value="false" /><label class="form-check-label small">Damaged by customer (charge)</label></div></div>
+        <div class="col-md-2"><button class="btn btn-outline-primary w-100">Add</button></div></form></div>
+    }
+    <div class="card"><div class="card-header d-flex justify-content-between">Bills @if (User.IsInRole("Accounts")) { <a class="btn btn-sm btn-primary" asp-controller="Bills" asp-action="Generate" asp-route-connectionId="@Model.Id">Generate bill</a> }</div>
+    <table class="table table-sm mb-0"><thead><tr><th>Bill</th><th>Period</th><th>Total</th><th>Paid</th><th>Due</th><th></th></tr></thead>
+    @foreach (var b in bills) { <tr><td class="id-mono">@b.BillNo</td><td>@b.PeriodStart.ToString("yyyy-MM-dd") - @b.PeriodEnd.ToString("yyyy-MM-dd")</td><td>@b.Total.ToString("C")</td><td>@b.Paid.ToString("C")</td><td>@b.Due.ToString("C")</td><td>@if (!User.IsInRole("Technical")) { <a asp-controller="Bills" asp-action="Details" asp-route-id="@b.Id">View</a> }</td></tr> }
+    @if (!bills.Any()) { <tr><td colspan="6" class="text-muted">No bills yet.</td></tr> }</table></div>
+  </div>
+</div>

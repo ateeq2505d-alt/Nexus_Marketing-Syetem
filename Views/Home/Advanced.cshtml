@@ -1,0 +1,25 @@
+@model AdvancedVm
+@{ ViewData["Title"] = "Advanced search"; var q = Context.Request.Query; }
+<h3>Advanced search</h3>
+<form method="get" class="card card-body mb-3"><div class="row g-2">
+  <div class="col-md-2"><label class="form-label">Search in</label><select name="kind" class="form-select"><option value="order" selected="@(Model.Kind=="order")">Orders</option><option value="connection" selected="@(Model.Kind=="connection")">Connections</option></select></div>
+  <div class="col-md-2"><label class="form-label">Order / Account ID</label><input name="id" value="@q["id"]" class="form-control id-mono" /></div>
+  <div class="col-md-2"><label class="form-label">Name</label><input name="name" value="@q["name"]" class="form-control" /></div>
+  <div class="col-md-2"><label class="form-label">Connection type</label><select name="type" class="form-select"><option value="">Any</option><option value="D" selected="@(q["type"]=="D")">Dial-Up</option><option value="B" selected="@(q["type"]=="B")">Broadband</option><option value="T" selected="@(q["type"]=="T")">Telephone</option></select></div>
+  <div class="col-md-2"><label class="form-label">From date</label><input type="date" name="from" value="@q["from"]" class="form-control" /></div>
+  <div class="col-md-2"><label class="form-label">To date</label><input type="date" name="to" value="@q["to"]" class="form-control" /></div>
+  <div class="col-md-2"><label class="form-label">Contact number</label><input name="phone" value="@q["phone"]" class="form-control" /></div>
+  <div class="col-md-2 align-self-end"><button class="btn btn-primary">Search</button></div>
+</div></form>
+@if (Model.Orders != null)
+{
+  <div class="card"><table class="table table-striped mb-0"><thead><tr><th>Order ID</th><th>Customer</th><th>Contact</th><th>Type</th><th>Plan</th><th>Applied</th><th>Status</th></tr></thead>
+  @foreach (var o in Model.Orders) { <tr><td><a class="id-mono" asp-controller="Orders" asp-action="Details" asp-route-id="@o.Id">@o.OrderNo</a></td><td>@o.Customer.Name</td><td>@o.Customer.Phone</td><td>@o.ConnType</td><td>@o.Plan.Name</td><td>@o.ApplicationDate.ToString("yyyy-MM-dd")</td><td><span class="badge @UI.Css(o.Status.ToString())">@o.Status</span></td></tr> }
+  @if (!Model.Orders.Any()) { <tr><td colspan="7" class="text-muted">No matching orders.</td></tr> }</table></div>
+}
+@if (Model.Connections != null)
+{
+  <div class="card"><table class="table table-striped mb-0"><thead><tr><th>Account ID</th><th>Customer</th><th>Contact</th><th>Type</th><th>Plan</th><th>Started</th><th>Status</th><th>Due</th></tr></thead>
+  @foreach (var c in Model.Connections) { <tr><td><a class="id-mono" asp-controller="Connections" asp-action="Details" asp-route-id="@c.Id">@c.AccountId</a></td><td>@c.Customer.Name</td><td>@c.Customer.Phone</td><td>@c.ConnType</td><td>@c.Plan.Name</td><td>@c.StartDate.ToString("yyyy-MM-dd")</td><td><span class="badge @UI.Css(c.Status.ToString())">@c.Status</span></td><td>@Model.Dues[c.Id].ToString("C")</td></tr> }
+  @if (!Model.Connections.Any()) { <tr><td colspan="8" class="text-muted">No matching connections.</td></tr> }</table></div>
+}

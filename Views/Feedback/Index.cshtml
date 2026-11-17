@@ -1,0 +1,6 @@
+@model List<Feedback>
+@{ ViewData["Title"] = "Feedback"; }
+<div class="d-flex justify-content-between align-items-center mb-2"><h3>Customer feedback</h3>@if (User.IsInRole("Customer")) { <a class="btn btn-primary" asp-action="Create">+ Give feedback</a> }</div>
+<div class="card"><table class="table table-striped mb-0"><thead><tr><th>Date</th><th>Customer</th><th>Order</th><th>Rating</th><th>Comments</th></tr></thead>
+@foreach (var f in Model) { <tr><td>@f.Date.ToString("yyyy-MM-dd")</td><td>@f.Customer.Name</td><td class="id-mono">@f.OrderNo</td><td>@f.Rating / 5</td><td>@f.Comments</td></tr> }
+@if (!Model.Any()) { <tr><td colspan="5" class="text-muted">No feedback yet.</td></tr> }</table></div>

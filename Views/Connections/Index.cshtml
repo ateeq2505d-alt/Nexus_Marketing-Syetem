@@ -1,0 +1,16 @@
+@model List<Connection>
+@{ ViewData["Title"] = "Connections"; var dues = (Dictionary<int, decimal>)ViewBag.Dues; string st = ViewBag.Status; }
+<h3>Connections</h3>
+<div class="mb-2">
+  <a class="btn btn-sm @(st == null ? "btn-primary" : "btn-outline-primary")" asp-action="Index">All</a>
+  @foreach (var s in Enum.GetNames<ConnStatus>()) { <a class="btn btn-sm @(st == s ? "btn-primary" : "btn-outline-primary")" asp-action="Index" asp-route-status="@s">@s</a> }
+</div>
+<div class="card"><div class="table-responsive"><table class="table table-striped table-hover mb-0">
+<thead><tr><th>Account ID</th><th>Customer</th><th>City</th><th>Type</th><th>Plan</th><th>Started</th><th>Status</th><th>Amount due</th><th></th></tr></thead>
+@foreach (var c in Model)
+{
+  <tr><td class="id-mono">@c.AccountId</td><td>@c.Customer.Name</td><td>@c.City.Name</td><td>@c.ConnType</td><td>@c.Plan.Name</td><td>@c.StartDate.ToString("yyyy-MM-dd")</td>
+  <td><span class="badge @UI.Css(c.Status.ToString())">@c.Status</span></td><td>@dues[c.Id].ToString("C")</td><td><a class="btn btn-sm btn-outline-primary" asp-action="Details" asp-route-id="@c.Id">Open</a></td></tr>
+}
+@if (!Model.Any()) { <tr><td colspan="9" class="text-muted">No connections.</td></tr> }
+</table></div></div>

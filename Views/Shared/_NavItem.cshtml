@@ -1,0 +1,11 @@
+@model (string C, string A, string Icon, string Text)
+@{
+    var ctl = (string)ViewContext.RouteData.Values["controller"];
+    var act = (string)ViewContext.RouteData.Values["action"];
+    bool active = ctl == Model.C;
+    // controllers with several menu entries are matched on the action as well
+    if (active && (Model.C == "Home" || Model.C == "Admin" || Model.C == "Account")) active = act == Model.A || (Model.C == "Home" && Model.A == "Index" && act == "Index");
+    if (active && Model.C == "Bills") active = Model.A == "Payments" ? act == "Payments" : Model.A == "Generate" ? act == "Generate" : (act == "Index" || act == "Details" || act == "Receipt");
+    if (active && Model.C == "PlanChanges") active = true;
+}
+<a class="side-link @(active ? "active" : "")" asp-controller="@Model.C" asp-action="@Model.A"><i class="bi bi-@Model.Icon"></i><span>@Model.Text</span></a>

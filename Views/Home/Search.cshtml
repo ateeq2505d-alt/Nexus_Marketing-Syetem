@@ -1,0 +1,17 @@
+@{ ViewData["Title"] = "Track"; Order o = ViewBag.Order; Connection c = ViewBag.Conn; string searched = ViewBag.Searched; }
+<h3>Track an order or connection</h3>
+<div class="row g-3">
+  <div class="col-md-6"><div class="card card-body"><form method="get"><label class="form-label">Order ID (e.g. B0000000001)</label>
+    <div class="input-group"><input name="orderId" class="form-control id-mono" value="@Context.Request.Query["orderId"]" maxlength="11" /><button class="btn btn-primary">Check order status</button></div></form>
+    @if (searched == "order") {
+      if (o == null) { <div class="alert alert-warning mt-3 mb-0">No order found with that ID.</div> }
+      else { <table class="table table-sm mt-3 mb-0"><tr><th>Order ID</th><td class="id-mono">@o.OrderNo</td></tr><tr><th>Name</th><td>@o.Customer.Name</td></tr><tr><th>Plan</th><td>@o.Plan.Name</td></tr><tr><th>Applied on</th><td>@o.ApplicationDate.ToString("yyyy-MM-dd")</td></tr><tr><th>Status</th><td><span class="badge @UI.Css(o.Status.ToString())">@o.Status</span></td></tr></table> } }
+  </div></div>
+  <div class="col-md-6"><div class="card card-body"><form method="get"><label class="form-label">Account ID (16 characters)</label>
+    <div class="input-group"><input name="accountId" class="form-control id-mono" value="@Context.Request.Query["accountId"]" maxlength="16" /><button class="btn btn-primary">Check connection status</button></div></form>
+    @if (searched == "account") {
+      if (c == null) { <div class="alert alert-warning mt-3 mb-0">No connection found with that account ID.</div> }
+      else { <table class="table table-sm mt-3 mb-0"><tr><th>Account ID</th><td class="id-mono">@c.AccountId</td></tr><tr><th>Name</th><td>@c.Customer.Name</td></tr><tr><th>Plan</th><td>@c.Plan.Name</td></tr><tr><th>Status</th><td><span class="badge @UI.Css(c.Status.ToString())">@c.Status</span></td></tr><tr><th>Amount due</th><td>@(((decimal)ViewBag.Due).ToString("C"))</td></tr></table> } }
+  </div></div>
+</div>
+<p class="text-muted mt-3">Staff and customers can sign in and use <a asp-action="Advanced">advanced search</a> (name, type, period, contact number).</p>

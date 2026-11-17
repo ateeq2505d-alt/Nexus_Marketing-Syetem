@@ -1,0 +1,83 @@
+@model Order
+@{
+    ViewData["Title"] = "Place order";
+    var plans = (List<Plan>)ViewBag.Plans; var products = (List<Product>)ViewBag.Products; var shops = (List<RetailShop>)ViewBag.Shops;
+    var cities = (List<City>)ViewBag.Cities; var customers = (List<Customer>)ViewBag.Customers; bool cust = User.IsInRole("Customer");
+    // after a refused submit the form is shown again with everything the user had entered
+    bool posted = Context.Request.Method == "POST" && Context.Request.HasFormContentType;
+    string F(string k) => posted ? Context.Request.Form[k].ToString() : "";
+    string ct = Model.ConnType.ToString();
+}
+<div class="page-head"><div><h3>Place a connection order</h3><div class="sub">Choose the customer, the connection type and a plan. The order gets a unique order ID.</div></div></div>
+<div id="clientErrors"></div>
+<partial name="_Errors" />
+<form method="post" enctype="multipart/form-data" class="form-grid card card-body" id="orderForm" novalidate>
+  @if (!cust)
+  {
+    <h6>Customer</h6>
+    <div class="mb-2"><select name="existingCustomerId" id="existing" class="form-select"><option value="">-- New customer (fill in below) --</option>
+      @foreach (var c in customers) { <option value="@c.Id" selected="@(F("existingCustomerId") == c.Id.ToString())">@c.Name - @c.Phone</option> }</select></div>
+    <div id="newcust" class="row g-2 mb-3">
+      <div class="col-md-6"><input name="newName" value="@F("newName")" class="form-control" placeholder="Name *" /></div>
+      <div class="col-md-6"><input name="newPhone" value="@F("newPhone")" class="form-control" placeholder="Contact number *" /></div>
+      <div class="col-md-6"><input name="newEmail" value="@F("newEmail")" class="form-control" placeholder="Email" /></div>
+      <div class="col-md-6"><select name="newCityId" class="form-select"><option value="">City *</option>@foreach (var c in cities) { <option value="@c.Id" selected="@(F("newCityId") == c.Id.ToString())">@c.Name (@c.Code)</option> }</select></div>
+      <div class="col-12"><input name="newAddress" value="@F("newAddress")" class="form-control" placeholder="Address" /></div>
+      <div class="col-md-4"><div class="form-check"><input type="checkbox" class="form-check-input" name="newCorporate" value="true" checked="@(F("newCorporate").StartsWith("true"))" /><label class="form-check-label">Corporate</label></div></div>
+      <div class="col-md-8"><input name="newCompany" value="@F("newCompany")" class="form-control" placeholder="Company name" /></div>
+    </div>
+  }
+  <h6>Connection</h6>
+  <div class="row g-3">
+    @if (cust) { <div class="col-md-12"><label class="form-label">Retail shop *</label><select name="ShopId" class="form-select">@foreach (var s in shops) { <option value="@s.Id" selected="@(Model.ShopId == s.Id)">@s.Name</option> }</select></div> }
+    <div class="col-md-6"><label class="form-label">Connection type</label>
+      <select name="ConnType" id="ct" class="form-select"><option value="D" selected="@(ct == "D")">Dial-Up (D)</option><option value="B" selected="@(ct == "B")">Broadband (B)</option><option value="T" selected="@(ct == "T")">Telephone only (T)</option></select></div>
+    <div class="col-12"><label class="form-label">Plan *</label>
+      <div class="plan-grid" id="planGrid">@foreach (var p in plans) { <label class="plan-card" data-type="@p.ConnType"><input type="radio" name="PlanId" value="@p.Id" checked="@(Model.PlanId == p.Id)" /><div class="p-name">@p.Name</div><div class="p-price">$@p.Rental.ToString("0.##") <small>/ @p.Cycle</small></div><div class="p-desc">@p.Description</div></label> }</div></div>
+    <div class="col-md-6" id="landBox">
+      <div class="alert alert-info py-2 small mb-2"><i class="bi bi-info-circle me-1"></i>Dial-up needs a Nexus landline. Tick the box if the customer already has one, otherwise choose a landline plan below.</div>
+      <div class="form-check mb-1"><input type="checkbox" class="form-check-input" name="HasNexusLandline" id="hasLand" value="true" checked="@Model.HasNexusLandline" /><input type="hidden" name="HasNexusLandline" value="false" /><label class="form-check-label">Customer already holds a Nexus landline</label></div>
+      <label class="form-label">Landline plan (needed if no Nexus landline)</label>
+      <select name="LandlinePlanId" id="landPlan" class="form-select"><option value="">(none)</option>@foreach (var p in plans.Where(p => p.ConnType == ConnType.T)) { <option value="@p.Id" selected="@(Model.LandlinePlanId == p.Id)">@p.Name - $@p.Rental.ToString("0.##")</option> }</select></div>
+    <div class="col-md-6"><label class="form-label">Equipment</label>
+      <select name="EquipmentProductId" class="form-select"><option value="">(none / customer own)</option>@foreach (var p in products) { <option value="@p.Id" selected="@(Model.EquipmentProductId == p.Id)">@p.Name (@p.Type, stock @p.Stock)</option> }</select>
+      <label class="form-label mt-2">Number of connections (bulk / corporate)</label><input type="number" min="1" name="Quantity" value="@(Model.Quantity < 1 ? 1 : Model.Quantity)" class="form-control" /></div>
+    <div class="col-md-6"><label class="form-label">Address proof (optional)</label><input type="file" name="addressProof" class="form-control" /></div>
+    <div class="col-md-6"><label class="form-label">Application form (optional)</label><input type="file" name="applicationForm" class="form-control" /></div>
+  </div>
+  <div class="mt-3"><button class="btn btn-primary">Place order</button> <a class="btn btn-link" asp-action="Index">Cancel</a></div>
+</form>
+@section Scripts {
+<script>
+  function sync() {
+    var t = $('#ct').val();
+    $('.plan-card').each(function () { $(this).toggleClass('hidden-plan', $(this).data('type') !== t); });
+    if (!$('.plan-card:not(.hidden-plan) input:checked').length) $('.plan-card:not(.hidden-plan)').first().find('input').prop('checked', true);
+    $('#landBox').toggle(t === 'D');
+  }
+  $('#ct').on('change', sync); sync();
+  $('#existing').on('change', function () { $('#newcust').toggle(!$(this).val()); }); $('#newcust').toggle(!$('#existing').val());
+
+  // check the order in the browser first so the user sees exactly what is missing, next to the field
+  $('#orderForm').on('submit', function (e) {
+    var errs = [];
+    $('.is-invalid').removeClass('is-invalid'); $('.inline-err').remove();
+    function bad(sel, msg) { var el = $(sel).first(); el.addClass('is-invalid'); el.after('<div class="inline-err text-danger small mt-1">' + msg + '</div>'); errs.push({ el: el, msg: msg }); }
+    var t = $('#ct').val();
+    if ($('#existing').length && !$('#existing').val()) {
+      if (!$('[name=newName]').val().trim()) bad('[name=newName]', 'Enter the customer name.');
+      if (!$('[name=newPhone]').val().trim()) bad('[name=newPhone]', 'Enter the customer contact number.');
+      if (!$('[name=newCityId]').val()) bad('[name=newCityId]', 'Select the customer city.');
+    }
+    if (!$('.plan-card:not(.hidden-plan) input:checked').length) bad('#planGrid', 'Select a plan.');
+    if (t === 'D' && !$('#hasLand').is(':checked') && !$('#landPlan').val()) bad('#landPlan', 'A Nexus landline is compulsory for dial-up: choose a landline plan, or tick "Customer already holds a Nexus landline".');
+    var q = parseInt($('[name=Quantity]').val(), 10); if (!(q >= 1)) bad('[name=Quantity]', 'Number of connections must be at least 1.');
+    if (errs.length) {
+      e.preventDefault();
+      $('#clientErrors').html('<div class="alert alert-danger form-errors"><div class="d-flex"><i class="bi bi-exclamation-octagon-fill me-3 fs-4"></i><div><b>The order is not complete yet:</b><ul class="mb-0 mt-1">' + errs.map(function (x) { return '<li>' + x.msg + '</li>'; }).join('') + '</ul></div></div></div>');
+      document.getElementById('clientErrors').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      errs[0].el.focus && errs[0].el.focus();
+    }
+  });
+</script>
+}

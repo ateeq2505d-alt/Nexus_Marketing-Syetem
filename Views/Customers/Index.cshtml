@@ -1,0 +1,7 @@
+@model List<Customer>
+@{ ViewData["Title"] = "Customers"; }
+<h3>Customers</h3>
+<form method="get" class="row g-2 mb-3"><div class="col-auto"><input name="q" value="@ViewBag.Q" class="form-control" placeholder="Search name / phone / email" /></div><div class="col-auto"><button class="btn btn-outline-primary">Search</button></div></form>
+<div class="card"><table class="table table-striped mb-0"><thead><tr><th>Name</th><th>Phone</th><th>Email</th><th>City</th><th>Corporate</th><th>Registered</th><th></th></tr></thead>
+@foreach (var c in Model) { <tr><td>@c.Name</td><td>@c.Phone</td><td>@c.Email</td><td>@c.City?.Name</td><td>@(c.IsCorporate ? c.CompanyName : "-")</td><td>@c.RegisteredOn.ToString("yyyy-MM-dd")</td><td><a class="btn btn-sm btn-outline-primary" asp-action="Details" asp-route-id="@c.Id">Open</a></td></tr> }
+</table></div>

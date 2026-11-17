@@ -1,0 +1,16 @@
+@model List<PlanChange>
+@{ ViewData["Title"] = "Plan changes"; bool canDecide = User.IsInRole("Technical") || User.IsInRole("Admin"); }
+<div class="d-flex justify-content-between align-items-center mb-2"><h3>Plan change requests</h3>
+  @if (User.IsInRole("Customer") || User.IsInRole("Retail")) { <a class="btn btn-primary" asp-action="Create">+ Request plan change</a> }</div>
+<div class="card"><table class="table table-striped mb-0"><thead><tr><th>Requested</th><th>Account ID</th><th>Customer</th><th>Current plan</th><th>New plan</th><th>Reason</th><th>Status</th><th></th></tr></thead>
+@foreach (var p in Model)
+{
+  <tr><td>@p.RequestedOn.ToString("yyyy-MM-dd")</td><td class="id-mono">@p.Connection.AccountId</td><td>@p.Connection.Customer.Name</td><td>@p.Connection.Plan.Name</td><td>@p.NewPlan.Name</td><td>@p.Reason</td>
+  <td><span class="badge @(p.Status == RequestStatus.Approved ? "bg-success" : p.Status == RequestStatus.Rejected ? "bg-danger" : "bg-warning text-dark")">@p.Status</span> @p.DecisionNote</td>
+  <td>@if (canDecide && p.Status == RequestStatus.Pending)
+      {
+        <form method="post" asp-action="Decide" asp-route-id="@p.Id" class="d-flex gap-1"><input name="note" class="form-control form-control-sm" placeholder="Note" />
+          <button name="approve" value="true" class="btn btn-sm btn-success">Approve</button><button name="approve" value="false" class="btn btn-sm btn-outline-danger">Reject</button></form>
+      }</td></tr>
+}
+@if (!Model.Any()) { <tr><td colspan="8" class="text-muted">No plan change requests.</td></tr> }</table></div>

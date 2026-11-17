@@ -1,0 +1,12 @@
+@model Customer
+@{ ViewData["Title"] = Model.Name; var orders = (List<Order>)ViewBag.Orders; var conns = (List<Connection>)ViewBag.Connections; }
+<div class="d-flex justify-content-between"><h3>@Model.Name</h3><div>@if (User.IsInRole("Admin") || User.IsInRole("Retail")) { <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@Model.Id">Edit contact details</a> } <a class="btn btn-link" asp-action="Index">&laquo; Back</a></div></div>
+<div class="card card-body mb-3"><table class="table table-sm mb-0">
+  <tr><th>Contact</th><td>@Model.Phone / @Model.Email</td></tr><tr><th>Address</th><td>@Model.Address, @Model.City?.Name</td></tr>
+  <tr><th>Type</th><td>@(Model.IsCorporate ? "Corporate - " + Model.CompanyName : "Individual")</td></tr><tr><th>Login</th><td>@Model.Username</td></tr></table></div>
+<div class="row g-3">
+  <div class="col-md-6"><div class="card"><div class="card-header">Orders</div><table class="table table-sm mb-0">
+    @foreach (var o in orders) { <tr><td><a class="id-mono" asp-controller="Orders" asp-action="Details" asp-route-id="@o.Id">@o.OrderNo</a></td><td>@o.Plan.Name</td><td><span class="badge @UI.Css(o.Status.ToString())">@o.Status</span></td></tr> }</table></div></div>
+  <div class="col-md-6"><div class="card"><div class="card-header">Connections</div><table class="table table-sm mb-0">
+    @foreach (var c in conns) { <tr><td><a class="id-mono" asp-controller="Connections" asp-action="Details" asp-route-id="@c.Id">@c.AccountId</a></td><td>@c.Plan.Name</td><td><span class="badge @UI.Css(c.Status.ToString())">@c.Status</span></td></tr> }</table></div></div>
+</div>

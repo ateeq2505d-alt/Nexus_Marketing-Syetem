@@ -1,0 +1,10 @@
+@model List<(string Message, string Link, DateTime CreatedOn, bool IsRead)>
+@{ ViewData["Title"] = "Notifications"; }
+<h3>Notifications</h3>
+<div class="list-group">
+@foreach (var n in Model)
+{
+  <a class="list-group-item list-group-item-action @(n.IsRead ? "" : "fw-bold")" href="@(n.Link ?? "#")">@n.Message <span class="text-muted small ms-2">@n.CreatedOn.ToString("yyyy-MM-dd HH:mm")</span></a>
+}
+@if (!Model.Any()) { <div class="list-group-item text-muted">No notifications.</div> }
+</div>

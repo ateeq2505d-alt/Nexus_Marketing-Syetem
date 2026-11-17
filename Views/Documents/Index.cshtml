@@ -1,0 +1,19 @@
+@model List<Document>
+@{ ViewData["Title"] = "Documents"; var cities = (List<City>)ViewBag.Cities; }
+<h3>Customer documents (filed by year and area)</h3>
+<form method="get" class="row g-2 mb-3">
+  <div class="col-auto"><input type="number" name="year" value="@ViewBag.Year" class="form-control" placeholder="Year" /></div>
+  <div class="col-auto"><select name="city" class="form-select"><option value="">All areas</option>@foreach (var c in cities) { <option value="@c.Code" selected="@(ViewBag.City == c.Code)">@c.Name (@c.Code)</option> }</select></div>
+  <div class="col-auto"><button class="btn btn-outline-primary">Filter</button></div></form>
+@if (User.IsInRole("Admin") || User.IsInRole("Retail"))
+{
+  <form method="post" asp-action="Upload" enctype="multipart/form-data" class="card card-body mb-3"><div class="row g-2 align-items-end">
+    <div class="col-md-3"><label class="form-label">Customer</label><select name="customerId" class="form-select">@foreach (var c in (List<Customer>)ViewBag.Customers) { <option value="@c.Id">@c.Name - @c.Phone</option> }</select></div>
+    <div class="col-md-2"><label class="form-label">Type</label><select name="type" class="form-select"><option>AddressProof</option><option>ApplicationForm</option><option>Receipt</option></select></div>
+    <div class="col-md-2"><label class="form-label">Order ID (optional)</label><input name="orderNo" class="form-control id-mono" /></div>
+    <div class="col-md-3"><label class="form-label">File</label><input type="file" name="file" class="form-control" /></div>
+    <div class="col-md-2"><button class="btn btn-primary w-100">File document</button></div></div></form>
+}
+<div class="card"><table class="table table-striped mb-0"><thead><tr><th>Year</th><th>Area code</th><th>Customer</th><th>Order</th><th>Type</th><th>File</th></tr></thead>
+@foreach (var d in Model) { <tr><td>@d.Year</td><td>@d.CityCode</td><td>@d.Customer.Name</td><td class="id-mono">@d.OrderNo</td><td>@d.Type</td><td><a href="@d.StoredPath" target="_blank">@d.FileName</a></td></tr> }
+@if (!Model.Any()) { <tr><td colspan="6" class="text-muted">No documents uploaded yet. Documents are attached when an order is placed.</td></tr> }</table></div>

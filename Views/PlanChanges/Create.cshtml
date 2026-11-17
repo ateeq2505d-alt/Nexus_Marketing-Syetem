@@ -1,0 +1,20 @@
+@{ ViewData["Title"] = "Request plan change"; var conns = (List<Connection>)ViewBag.Connections; var plans = (List<Plan>)ViewBag.Plans; int? sel = ViewBag.Selected; }
+<h3>Request a plan change</h3>
+<form method="post" class="form-grid card card-body">
+  <div class="mb-3"><label class="form-label">Connection</label>
+    <select name="connectionId" id="conn" class="form-select">@foreach (var c in conns) { <option value="@c.Id" data-type="@c.ConnType" selected="@(sel == c.Id)">@c.AccountId - @c.Customer.Name - @c.Plan.Name</option> }</select></div>
+  <div class="mb-3"><label class="form-label">New plan (same connection type)</label>
+    <select name="newPlanId" id="plan" class="form-select">@foreach (var p in plans) { <option value="@p.Id" data-type="@p.ConnType">@p.Name - $@p.Rental.ToString("0.##") (@p.Cycle)</option> }</select></div>
+  <div class="mb-3"><label class="form-label">Reason</label><input name="reason" class="form-control" /></div>
+  <button class="btn btn-primary">Submit request</button> <a class="btn btn-link" asp-action="Index">Cancel</a>
+</form>
+@section Scripts {
+<script>
+  function sync() {
+    var t = $('#conn option:selected').data('type');
+    $('#plan option').each(function () { var ok = $(this).data('type') === t; $(this).prop('hidden', !ok).prop('disabled', !ok); });
+    if ($('#plan option:selected').data('type') !== t) $('#plan').val($('#plan option').filter(function () { return $(this).data('type') === t; }).first().val());
+  }
+  $('#conn').on('change', sync); sync();
+</script>
+}

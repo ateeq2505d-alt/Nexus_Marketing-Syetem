@@ -1,0 +1,79 @@
+@model Order
+@{
+    ViewData["Title"] = "Order " + Model.OrderNo;
+    var conns = (List<Connection>)ViewBag.Connections; var docs = (List<Document>)ViewBag.Docs; int disc = (int)(decimal)ViewBag.Discount;
+    bool tech = User.IsInRole("Technical");
+}
+<div class="d-flex justify-content-between"><h3>Order <span class="id-mono">@Model.OrderNo</span> <span class="badge @UI.Css(Model.Status.ToString())">@Model.Status</span></h3><a class="btn btn-link" asp-action="Index">&laquo; Back</a></div>
+
+@{
+    int stage = Model.Status switch { OrderStatus.Received => 1, OrderStatus.Feasible => 2, OrderStatus.NotFeasible => 2, OrderStatus.Connected => 3, _ => 0 };
+    string cls(int n) => Model.Status == OrderStatus.Cancelled ? "" : (stage > n ? "done" : stage == n ? (Model.Status == OrderStatus.NotFeasible && n == 2 ? "fail" : "current") : "");
+}
+@if (Model.Status == OrderStatus.Cancelled) { <div class="alert alert-secondary"><i class="bi bi-x-octagon me-1"></i>This order was cancelled.</div> }
+else {
+<div class="card card-body mb-3"><div class="tracker">
+  <div class="step done"><div class="dot"><i class="bi bi-check-lg"></i></div>Order placed<br /><small>@Model.ApplicationDate.ToString("d MMM")</small></div>
+  <div class="step @cls(1)"><div class="dot"><i class="bi bi-@(stage >= 2 ? "check-lg" : "hourglass-split")"></i></div>Feasibility check</div>
+  <div class="step @(Model.Status == OrderStatus.NotFeasible ? "fail" : stage >= 2 ? (stage > 2 ? "done" : "current") : "")"><div class="dot"><i class="bi bi-@(Model.Status == OrderStatus.NotFeasible ? "x-lg" : stage > 2 ? "check-lg" : "clipboard-check")"></i></div>@(Model.Status == OrderStatus.NotFeasible ? "Not feasible" : "Feasible")</div>
+  <div class="step @(stage == 3 ? "done" : "")"><div class="dot"><i class="bi bi-@(stage == 3 ? "check-lg" : "plug")"></i></div>Connected</div>
+</div></div>
+}
+<div class="row g-3">
+  <div class="col-lg-6"><div class="card card-body">
+    <table class="table table-sm mb-0">
+      <tr><th>Customer</th><td>@Model.Customer.Name (@Model.Customer.Phone)</td></tr>
+      <tr><th>City</th><td>@Model.Customer.City?.Name (@Model.Customer.City?.Code)</td></tr>
+      <tr><th>Connection type</th><td>@TypeInfo.Label(Model.ConnType)</td></tr>
+      <tr><th>Plan</th><td>@Model.Plan.Name</td></tr>
+      @if (Model.ConnType == ConnType.D) { <tr><th>Landline</th><td>@(Model.HasNexusLandline ? "Already holds a Nexus landline" : "New landline: " + Model.LandlinePlan?.Name)</td></tr> }
+      <tr><th>Equipment</th><td>@(Model.Equipment?.Name ?? "-")</td></tr>
+      <tr><th>Connections requested</th><td>@Model.Quantity @(disc > 0 ? $"(bulk discount {disc}% on advance and deposit)" : "")</td></tr>
+      <tr><th>Retail shop</th><td>@Model.Shop?.Name</td></tr>
+      <tr><th>Applied</th><td>@Model.ApplicationDate.ToString("yyyy-MM-dd HH:mm")</td></tr>
+      @if (docs.Any()) { <tr><th>Documents</th><td>@foreach (var d in docs) { <div><a href="@d.StoredPath" target="_blank">@d.Type: @d.FileName</a></div> }</td></tr> }
+    </table>
+  </div>
+  @if (Model.Status != OrderStatus.Received && Model.Status != OrderStatus.Cancelled || Model.DistanceKm != null)
+  {
+    <div class="card card-body mt-3"><h6>Feasibility report</h6>
+    <table class="table table-sm mb-0">
+      <tr><th>Distance checked</th><td>@Model.DistanceKm km (max @ViewBag.MaxKm km)</td></tr>
+      <tr><th>Server availability</th><td>@(Model.ServerAvailable == true ? "Available" : "Not available")</td></tr>
+      @if (Model.LandlineFeasible != null) { <tr><th>Landline feasible</th><td>@(Model.LandlineFeasible == true ? "Yes" : "No")</td></tr> }
+      @if (Model.InternetFeasible != null) { <tr><th>Internet feasible</th><td>@(Model.InternetFeasible == true ? "Yes" : "No")</td></tr> }
+      <tr><th>Remarks</th><td>@Model.Remarks</td></tr>
+    </table></div>
+  }
+  </div>
+  <div class="col-lg-6">
+    @if (tech && (Model.Status == OrderStatus.Received || Model.Status == OrderStatus.NotFeasible || Model.Status == OrderStatus.Feasible))
+    {
+      <div class="card card-body mb-3"><h6>Record feasibility check</h6>
+        <p class="small text-muted mb-2">
+          @if (Model.NeedsLandlineCheck && Model.NeedsInternetCheck) { <span>Dial-up with a new landline: landline and internet feasibility are both checked.</span> }
+          else if (Model.NeedsLandlineCheck) { <span>Only the landline is checked.</span> }
+          else { <span>Only internet feasibility is checked@(Model.ConnType == ConnType.D ? " (customer already holds a Nexus landline)" : "").</span> }
+        </p>
+        <form method="post" asp-action="Feasibility" asp-route-id="@Model.Id">
+          <div class="mb-2"><label class="form-label">Distance from exchange (km)</label><input type="number" step="0.1" name="distance" class="form-control" required value="@Model.DistanceKm" /></div>
+          <div class="form-check mb-2"><input type="checkbox" class="form-check-input" name="serverAvailable" value="true" checked="@(Model.ServerAvailable != false)" /><input type="hidden" name="serverAvailable" value="false" /><label class="form-check-label">Server available</label></div>
+          <div class="mb-2"><label class="form-label">Remarks</label><input name="remarks" class="form-control" value="@Model.Remarks" /></div>
+          <button class="btn btn-primary">Save feasibility result</button>
+        </form></div>
+    }
+    @if (tech && Model.Status == OrderStatus.Feasible)
+    {
+      <form method="post" asp-action="CreateConnections" asp-route-id="@Model.Id" class="mb-3"><button class="btn btn-success">Create @Model.Quantity connection(s) and assign account ID(s)</button></form>
+    }
+    @if (conns.Any())
+    {
+      <div class="card"><div class="card-header">Connections created</div><table class="table table-sm mb-0"><thead><tr><th>Account ID</th><th>Type</th><th>Plan</th><th>Status</th></tr></thead>
+      @foreach (var c in conns) { <tr><td><a class="id-mono" asp-controller="Connections" asp-action="Details" asp-route-id="@c.Id">@c.AccountId</a></td><td>@c.ConnType</td><td>@c.Plan.Name</td><td><span class="badge @UI.Css(c.Status.ToString())">@c.Status</span></td></tr> }</table></div>
+    }
+    @if (Model.Status != OrderStatus.Connected && Model.Status != OrderStatus.Cancelled && !tech)
+    {
+      <form method="post" asp-action="Cancel" asp-route-id="@Model.Id" data-confirm="Cancel this order?"><button class="btn btn-outline-danger">Cancel order</button></form>
+    }
+  </div>
+</div>
